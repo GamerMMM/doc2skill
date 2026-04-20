@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-link-skill-factory"
+version = "0.1.0"
+description = "OpenAPI-style workflow contract for turning official documentation links into reusable skills"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "BSD-3-Clause" }
+dependencies = []
+
+[project.optional-dependencies]
+runtime = []
+dev = ["pytest>=8", "nbformat>=5"]
+
+[project.scripts]
+docskill-factory = "novae_skill.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
