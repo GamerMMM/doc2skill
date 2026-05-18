@@ -1,5 +1,5 @@
-from docskill_factory.runtime import dispatch_action
-
+def dispatch_action(action, payload):
+    return {'action': action, 'payload': payload}
 entry_url = 'https://example.com/docs/'
 pages = [
     {'title': 'Quickstart', 'url': 'https://example.com/docs/quickstart/', 'kind': 'quickstart', 'priority': 'high', 'evidence': ['sidebar'], 'reason': 'contains setup steps'},

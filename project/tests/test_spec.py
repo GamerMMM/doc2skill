@@ -37,3 +37,4 @@ def test_default_file_tree_and_constraints_are_generic() -> None:
     constraint = SkillConstraint()
     assert constraint.target_language == "python"
     assert constraint.target_skill_format == "openapi"
+    assert constraint.output_dir == "./build"
